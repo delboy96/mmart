@@ -1,0 +1,72 @@
+OBAVEZNO - DO 17.02(23h)
+
+-admin panel
+-ajax
+-PROVERITI ZA MEJL(SMTP)kod cereala-na gitu gotov! !!!! mproveriti da li moze ovaj(php.ini, smtp..)
+
++-login, logout, reg(proveriti za BCRYPT!)
+
++-dodati (kolona) * not available for purchasing or no
++-za kontakt( bulma CSS ) NACI STO SE POMERA PRI UCITAVANJU!
++-postovi sa ultrasa za Exhibitions, sa Cetnika (slobodne..)SHOW         MORE za projects,
+
+NEOBAVEZNO -
+
+-scroll to top
++-na posebnom exhibition vise slika od istog dogadjaja(slider)
+-indexu biranje jezika EN/RS
+-lupa na galeriji    
+-Ćirilična verzija
+-format code
+-unused css
+-Bordure i zuta napolje, Oswald font svuda,
+
+---
+Organizacija koda i sam kod prvog (neobaveznog) sajta za PHP 2 treba da bude onakav kako smo radili na prve dve auditorne vezbe na ovom predmetu.
+
+Sajt treba da zatvara jednu celinu i da je sto kvalitetnije napravljen. Sustina nije broj funkcionalnosti, vec da su sve funkcionalnosti koje su napravljene, uradjene temeljno i kvalitetno. 
+
+Cilj je da sada kada ste prosli 2 predmeta iz PHP, mozete bez tenzija da napravite jos jedan sajt, koji je kruna onoga sto ste naucili do sada. 
+
+Nacin ocenjivanja sajta je sledeci:
+
+1. Ogranizacija koda - 1 (+)
+
+2. Obrada gresaka, statusni kodovi - 2 
+
+3. Logovanje gresaka i aktivnosti (u fajl ili bazu) - 1
+
+3. Clean code, tj nacin pisanja koda - 2 (+)
+
+4. Funkcionalnosti (svaka cela funkcionalnost, bez polovicnih kodova) - 2 (+) 
+
+5. AJAX - 1
+
+6. Logovanje, registracija, logout -  (+)
+
+7. Dokumentacija (0/-10):
+
+- Slike stranica i opisi funkcionalnosti
+
+- Slika dizajna baze podataka
+
+- Kod - link ka GitHub repository (preporuka) ili kopiranje koda
+
+8. Stranica o meni ili copyright u footer-u koji vodi ka Linkedin profilu (0/-5)
+
+<!--    --><?php //foreach ($exhibitonsPosts as $exPost):?>
+<!--        <div class="fh5co-project masonry-brick">-->
+<!--            <a href="?page=exhibition&id=--><?//= $exPost->id ?><!--">-->
+<!--                <img src="--><?//= $exPost->image?><!--" alt="--><?//= $prPost->subtitle?><!--">-->
+<!--                <h2>--><?//= $exPost->title?><!--</h2>-->
+<!--            </a>-->
+<!--            <span>--><?//= $exPost->time?><!--</span>-->
+<!--            <p>--><?//= $exPost->body?><!--</p>-->
+<!--        </div>-->
+<!--    --><?php //endforeach ?><!--        -->
+
+
+git pushovanje push push push
+1.git add .
+2.git commit -m "message"
+3.git push origin
