@@ -38,14 +38,7 @@
 </div></div>
     <div id="fh5co-projects-feed" class="fh5co-projects-feed2 clearfix masonry">
     
-        <div class="fh5co-project1 masonry-brick gallery">
-            <a href="<?= $exhibitonPosts->image?>" data-caption="<?= $exhibitonPosts->title?>" data-fancybox="gallery" class="fancybox" rel="ligthbox">
-                <!-- <img src="<?= $exhibitonPosts->image?>" alt="<?= $exhibitonPosts->subtitle?>" > -->
-                <h2><?= $exhibitonPosts->title?></h2>
-            </a>
             
-            <p><?= $exhibitonPosts->body?></p>
-        </div>       
     </div>
     <!--END .fh5co-projects-feed-->
 </div>

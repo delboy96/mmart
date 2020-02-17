@@ -19,12 +19,12 @@ function getExhibitions() {
     },
     error: function(xhr, status, error) {
       console.error(error);
-      switch (status) {
+      switch (code) {
         case 404:
-          // not found notifikacija
+          console.log("Not found!");
           break;
         case 500:
-          // server error
+          console.log("Server error!");
           break;
       }
     }

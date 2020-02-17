@@ -32,7 +32,7 @@ Nacin ocenjivanja sajta je sledeci:
 
 1. Ogranizacija koda - 1 (+)
 
-2. Obrada gresaka, statusni kodovi - 2 
+2. Obrada gresaka, statusni kodovi - 2 (+)
 
 3. Logovanje gresaka i aktivnosti (u fajl ili bazu) - 1
 
@@ -40,7 +40,7 @@ Nacin ocenjivanja sajta je sledeci:
 
 4. Funkcionalnosti (svaka cela funkcionalnost, bez polovicnih kodova) - 2 (+) 
 
-5. AJAX - 1
+5. AJAX - 1 (+)
 
 6. Logovanje, registracija, logout -  (+)
 

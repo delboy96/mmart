@@ -45,7 +45,18 @@
             case 'projects':
                 echo '<script src="js/components/Project.js"></script>';
                 echo '<script src="js/projects.js"></script>';
-                break;
+				break;
+			
+			case 'exhibition':
+				echo '<script src="js/components/ExhibitionSingle.js"></script>';
+				echo '<script src="js/exhibition.js"></script>';
+				break;
+			
+			case 'project':
+				echo '<script src="js/components/ProjectSingle.js"></script>';
+				echo '<script src="js/project.js"></script>';
+				break;	
+		
 
         }
     ?>
