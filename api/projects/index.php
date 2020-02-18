@@ -6,7 +6,7 @@ $data = null;
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Ucitavanje fajlova
     require_once '../../php/conn.php';
-    require_once '../../php/queries.php';
+    require_once '../../models/project.php';
 
     $data = getProjects($conn);
     $code = 200;

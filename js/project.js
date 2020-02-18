@@ -20,15 +20,15 @@ function getProject() {
       projectsContainer.innerHTML = output;
     },
     error: function(xhr, status, error) {
-      //   console.error(error);
-      //   switch (code) {
-      //     case 404:
-      //       console.log("Not found!");
-      //       break;
-      //     case 500:
-      //       console.log("Server error!");
-      //       break;
-      //   }
+        console.error(error);
+        switch (code) {
+          case 404:
+            console.log("Not found!");
+            break;
+          case 500:
+            console.log("Server error!");
+            break;
+        }
     }
   });
 }

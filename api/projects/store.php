@@ -7,9 +7,6 @@ $data = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
-//    echo '<pre>';
-//    print_r($_POST);
-//    echo '</pre>';
 
     $data = [
         'title' => $_POST['title'] ?? '',

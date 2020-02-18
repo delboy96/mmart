@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['id'])) {
     $id = intval($_GET['id']);
     // Ucitavanje fajlova
     require_once '../../php/conn.php';
-    require_once '../../php/queries.php';
+    require_once '../../models/exhibition.php';
 
     $data = getExhibition($conn, $id);
     $code = 200;

@@ -9,12 +9,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE' && isset($_GET['id'])) {
     $id = intval($_GET['id']);
     // Ucitavanje fajlova
     require_once '../../php/conn.php';
-    require_once '../../php/queries.php';
+    require_once '../../models/exhibition.php';
+    require_once '../../php/functions.php';
 
     $data = getExhibition($conn, $id);
 
     if ($data === null) {
+        logger('Exhibition not found.');
         $code = 404;
+
         $data = ['message' => 'Exhibition not found.'];
     }
 

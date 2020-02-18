@@ -7,9 +7,6 @@ $data = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
-//    echo '<pre>';
-//    print_r($_POST);
-//    echo '</pre>';
 
     $data = [
         'title' => $_POST['title'] ?? '',
@@ -23,14 +20,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Dozvoljeni fajl tipovi
     $allowedExtensions = [
-      'image/jpg',
-      'image/png',
-      'image/jpeg',
+        'image/jpg',
+        'image/png',
+        'image/jpeg',
     ];
     //TODO: Validation
 
     if (!$data['title']) {
         $errors[] = 'Title is required.';
+    }
+
+    if (!$data['subtitle']) {
+        $errors[] = 'Subtitle is required.';
+    }
+
+    if (!$data['body']) {
+        $errors[] = 'Body is required.';
     }
 
     if (!in_array($data['image']['type'], $allowedExtensions)) {
@@ -46,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $data = ['errors' => $errors];
     } else {
         require_once '../../php/conn.php';
-        require_once '../../php/queries.php';
         //TODO: Improve this with sha1
         $newFile = time().$data['image']['name'];
 

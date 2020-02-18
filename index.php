@@ -1,5 +1,4 @@
 <?php
-
 @session_start();
 
 $page = $_GET['page'] ?? null;
@@ -15,10 +14,21 @@ $routes = [
     'exhibition'
 ];
 
+require_once 'php/functions.php';
 require_once 'php/conn.php';
-require_once 'php/queries.php';
+require_once 'models/menu.php';
+require_once 'models/user.php';
 require_once 'components/head.php';
 require_once 'components/nav.php';
+
+if (userLoggedIn()) {
+    logActivity(
+        $conn,
+        "User visited {$_SERVER['REQUEST_URI']}",
+        auth()->id,
+        $_SERVER['HTTP_USER_AGENT']
+    );
+}
 
 switch ($page) {
     case 'about':
@@ -35,7 +45,7 @@ switch ($page) {
 
     case 'project':
         require_once 'views/project.php';
-        break;    
+        break;
 
     case 'contact':
         require_once 'views/contact.php';
@@ -47,11 +57,15 @@ switch ($page) {
 
     case 'exhibition':
         require_once 'views/exhibition.php';
-        break; 
-        
+        break;
+
     case 'login':
         require_once 'views/loginReg.php';
-        break;    
+        break;
+
+    case 'activation':
+        require_once 'views/activation.php';
+        break;
 
     default:
         require_once 'components/item.php';

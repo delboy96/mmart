@@ -1,13 +1,23 @@
 <?php
 
-define('DB_NAME', 'mm');
-define('DB_HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', '');
+/*
+ |--------------------------------------------------------------------------
+ | Local
+ |--------------------------------------------------------------------------
+*/
 
-// <?php
+// define('DB_DATABASE', 'mm');
+// define('DB_SERVER', 'localhost');
+// define('DB_USERNAME', 'root');
+// define('DB_PASSWORD', '');
 
-// define('DB_NAME', 'id9027385_ultras_world');
-// define('DB_HOST', 'localhost');
-// define('USER', 'id9027385_djuro');
-// define('PASSWORD', 'sifrat2103');
+/*
+ |--------------------------------------------------------------------------
+ | Production
+ |--------------------------------------------------------------------------
+*/
+
+define('DB_DATABASE', 'id12618698_mm');
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'id12618698_delboy');
+define('DB_PASSWORD', 'ozvucenivatikanSkiZec');
