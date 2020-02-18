@@ -199,8 +199,9 @@ figure {
 .fh5co-projects-feed .fh5co-project {
   float: left;
   margin: 20px 20px 20px;
-  width: 30%;
+  width: 28%;
   height:50%;
+  margin-left: 3%;
 }
 
 .fh5co-project1 {
