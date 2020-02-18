@@ -4,11 +4,14 @@
         <div class="footer-content">
             <div class="copyrightOld"><p>&copy; 2019 All Rights Milica Mišić <br>Designed by <a
                             href="https://www.linkedin.com/in/danilo-milo%C5%A1evi%C4%87/">Данило Милошевић</a></p>
+                            
             </div>
+            
             <div class="social">
                 <a href="https://www.facebook.com/milica.misic.923171"><i class="icon-facebook3"></i></a>
                 <a href="https://www.facebook.com/milica.misic.923171"><i class="icon-instagram2"></i></a>
                 <a href="https://rs.linkedin.com/in/milica-misic-28b29716a"><i class="icon-linkedin2"></i></a>
+                <a href="dokumentacijaMmart.pdf"><p> Dokumentacija </p></a>
             </div>
         </div>
     </div>
